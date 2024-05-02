@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Importa FormsModule aquí
+import { FormsModule } from '@angular/forms'; 
 import { EmergencyPinConfigurationComponent } from '../../component/emergency-pin-configuration/emergency-pin-configuration.component';
 
 @NgModule({
@@ -9,7 +9,7 @@ import { EmergencyPinConfigurationComponent } from '../../component/emergency-pi
   ],
   imports: [
     CommonModule,
-    FormsModule // Agrega FormsModule aquí
+    FormsModule
   ],
   exports: [
     EmergencyPinConfigurationComponent

@@ -32,15 +32,15 @@ private apiUrl = API_BASE_URL;
   createNewClient(newClientData: any): Observable<any> {
     return this.http.post<any>(`${this.apiUrl}/create`, newClientData)
       .pipe(
-        catchError(this.handleError) // Maneja cualquier error
+        catchError(this.handleError) 
       );
   }
 
-  // Puedes definir otros métodos del servicio aquí
+  
 
   private handleError(error: any): Observable<any> {
     console.error('Error:', error);
-    // Maneja el error como desees, por ejemplo, puedes lanzar una alerta o registrar el error en un servicio de registro
-    throw error; // Lanza el error nuevamente para que el componente que lo llama también pueda manejarlo si es necesario
+    
+    throw error; 
   }
 }

@@ -8,7 +8,6 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 })
 export class NewClientModalComponent {
 
-  // Define las propiedades para almacenar los datos ingresados por el usuario
   name: string = '';
   phone: string = '';
   email: string = '';
@@ -21,7 +20,7 @@ export class NewClientModalComponent {
   ) { }
 
   onOkClick(): void {
-    // Aquí puedes emitir un evento que envíe los datos ingresados de vuelta al componente padre
+
     this.dialogRef.close({
       name: this.name,
       phone: this.phone,

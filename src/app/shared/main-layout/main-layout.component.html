@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container" style="height: 100vh;">
+    <mat-sidenav mode="side" opened class="sidenav">
+        <div class="logo-container">
+            <img src="../../assets/logo_alianza.png" alt="Logo">
+        </div>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/clients"[ngStyle]="{'background-color': isActive('/clients') ? '#2F6FDB' : 'transparent'}">Clients</a>
+            <a mat-list-item routerLink="/client-look-history"[ngStyle]="{'background-color': isActive('/client-look-history') ? '#2F6FDB' : 'transparent'}">Client Look History</a>
+            <a mat-list-item routerLink="/emergency-pin-configuration"[ngStyle]="{'background-color': isActive('/emergency-pin-configuration') ? '#2F6FDB' : 'transparent'}">Emergency PIN <br>Configuration</a>
+            <a mat-list-item routerLink="/emergency-pin-history"[ngStyle]="{'background-color': isActive('/emergency-pin-history') ? '#2F6FDB' : 'transparent'}">Emergency PIN <br>History</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content style="flex: 1;">
+        <ng-content></ng-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
