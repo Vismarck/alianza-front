@@ -1,0 +1,36 @@
+.advanced-search-card {
+    background-color: #97BEFF;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    padding: 20px; /* Ajusta según sea necesario */
+}
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+}
+
+.advanced-search-card {
+    width: 400px; /* Tamaño personalizado para la tarjeta */
+    background-color: #97BEFF; /* Color de fondo */
+}
+
+/*
+.client-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+  }
+  
+  .client-content {
+    margin-top: 20px;
+  }
+  */
+
+
+  .client-container {
+    padding: 50px; /* Agrega un margen general de 20px alrededor del contenido */
+  }
